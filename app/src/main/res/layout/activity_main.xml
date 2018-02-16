@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.administrator.hellotomorrow.Main">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+       />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tomorrow1"
+        android:layout_gravity="bottom"
+        android:src="@mipmap/hello"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignTop="@+id/button3" />
+
+    <Button
+        android:text="hola tomorrow"
+        android:layout_width="131dp"
+        android:layout_height="62dp"
+        android:id="@+id/button3"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="362dp"
+        android:layout_height="479dp"
+        android:id="@+id/editText2"
+        android:hint="对明天的自己说点什么吧"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

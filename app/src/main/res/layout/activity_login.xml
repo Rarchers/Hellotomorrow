@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.administrator.hellotomorrow.MainActivity"
+    android:weightSum="1">
+
+
+    <!-- Login progress -->
+
+
+    <ImageView
+        android:layout_width="306dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/user"
+        android:id="@+id/imageView"
+        android:layout_weight="0.26" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="用户名："
+            />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="做你喜欢的事情"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="密码:"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"
+            android:hint="任何时候都不会太迟"/>
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:text="记住密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_weight="0.15" />
+
+    <Button
+        android:text="登录"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_weight="0.09" />
+
+
+</LinearLayout>
